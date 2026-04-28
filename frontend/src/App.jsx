@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     // Note: Change to your Render/Vercel URL after deployment
-    fetch('http://localhost:5001/api/skills')
+    fetch('https://skillflow-project.onrender.com/api/skills')
       .then(res => {
         if (!res.ok) throw new Error("Backend connection failed");
         return res.json();
